@@ -269,7 +269,7 @@ function get20s(arr) {
   let twenties = [];
   for (let i=0; i < arr.length; i++) {
   const curr_obj = arr[i]
-  if (curr_obj["years"] > "1900-2000") {
+  if (curr_obj["years"] >= "1900") {
   twenties.push(curr_obj)
   }
   }
