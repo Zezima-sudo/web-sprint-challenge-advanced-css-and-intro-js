@@ -266,14 +266,14 @@ function getArtistByIndex(dataset, index) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1900-2000) */
 
 function get20s(arr) {
-  let largeCollections = [];
+  let twenties = [];
   for (let i=0; i < arr.length; i++) {
   const curr_obj = arr[i]
-  if (curr_obj["years"] > 1990) {
-  largeCollections.push(curr_obj)
+  if (curr_obj["years"] > "1900-2000") {
+  twenties.push(curr_obj)
   }
   }
-  return largeCollections
+  return twenties;
   }
   
   get20s(artists);
